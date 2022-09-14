@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://gui/healthstats/scripts/HealthHearts.gd" type="Script" id=1]
+[ext_resource path="res://gui/healthstats/scripts/HealthBG.gd" type="Script" id=3]
+
+[node name="Control" type="Control"]
+margin_bottom = 48.0
+
+[node name="HealthBG" type="HBoxContainer" parent="."]
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 48.0
+margin_bottom = 80.0
+custom_constants/separation = 0
+script = ExtResource( 3 )
+
+[node name="HealthFG" type="HBoxContainer" parent="."]
+margin_left = 16.0
+margin_top = 36.0
+margin_right = 64.0
+margin_bottom = 64.0
+custom_constants/separation = 0
+script = ExtResource( 1 )
